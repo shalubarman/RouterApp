@@ -1,0 +1,22 @@
+Exercise 1 & 3:
+
+Router Application in the githut link: https://github.com/shalubarman/RouterApp
+
+Exercise 2:
+
+1. Python scripis: In the pyscripts folder
+
+2. NA (dont know)
+
+3. NA (dont know)
+
+4. Commands:
+   To observer troubleshoot : htop, vmstat, iostat, netstat
+   To identify load on server: uptime, top
+   To minimize server load: Above mentioned commands could be run to check the consumption and analysed.
+
+5. Create a view from the query
+	CREATE VIEW VIEWNAME AS 'SQL QUERY'
+
+6. Insert Into table
+	INSERT INTO TABLE TABLENAME(COL1,COL2...)
