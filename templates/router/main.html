@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block title_block %} Router {% endblock%}
+
+{% block heading_block %} <h1> Router </h1> {% endblock%}
+
+{% block content_block %}
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <form>
+        {% csrf_token %}
+        <br>
+        <div class="container">
+	    	<label><b>Sap Id</b></label>
+	    	<input placeholder="Sap Id" id="sapid" name="sapid" type="text">
+	    	<br>
+		    <label><b>Host Name</b></label>
+		    <input placeholder="Host Name" id="hostname" name="hostname" type="text">
+		    <br>
+		    <label><b>Loopback</b></label>
+		    <input placeholder="Loopback" id="loopback" name="loopback" type="text">
+		    <br>
+		    <label><b>Mac Address</b></label>
+		    <input placeholder="Mac" id="mac" name="mac" type="text">
+		    <br>
+		    <br>
+		    <select name="operation" id="operation" onchange="myFunction()">
+			  <option value="c">Create</option>
+			  <option value="u">Update</option>
+			  <option value="d">Delete</option>
+			</select>  
+
+		</div>
+
+    </form>
+
+{% endblock %}
+
+{% block js_block %}
+
+<script>
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = jQuery.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+var csrftoken = getCookie('csrftoken');
+
+function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+        }
+    }
+});
+
+
+function myFunction(){
+    var x = $('#operation').val()
+	var ip = $('#loopback').val()
+	record = {'sapid' : $('#sapid').val(), 'hostname' : $('#hostname').val(), 'loopback' : ip, 'mac' : $('#mac').val() }
+	if (x == 'c') {
+	$.ajax({
+			type: "POST",
+            url: 'http://127.0.0.1:8000/router/api',
+            data: record,
+            success: function(data) {
+                alert('success')
+            },
+            error: function(data) {
+                alert('error')
+            },
+        });}
+
+	var path = 'http://127.0.0.1:8000/router/api' + '&'
+	path = path.concat(ip)
+	path = path.replace('&','/')
+	if (x == 'u') {
+	$.ajax({
+            type: "PATCH",
+            url: path,
+            data: record,
+            success: function(data) {
+                alert('success')
+            },
+            error: function(data) {
+                alert('error')
+            },
+        });}
+
+	if (x == 'd') {
+	$.ajax({
+            type: "DELETE",
+            url: path,
+            success: function(data) {
+                alert('success')
+            },
+            error: function(data) {
+                alert('error')
+            },
+        });}
+
+}
+
+</script>
+
+{% endblock %}

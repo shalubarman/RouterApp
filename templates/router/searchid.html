@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title_block %} Router {% endblock%}
+
+{% block heading_block %} <h1> SAP ID </h1> {% endblock%}
+
+{% block content_block %}
+	<form>
+        <br>
+        <div class="container">
+	    	<label><b>SID </b></label>
+	    	<input placeholder="SID" id="sid" name="sid" type="text">
+	    	<br>
+	    	<br>
+		    <button type="button" value="search" onclick="myFunction()">Search</button>
+		    <br>
+	    	<br> 
+		</div>
+		
+		<div id="resultdiv"></div>
+
+    </form>
+
+{% endblock %}
+
+{% block js_block %}
+
+<script>
+function myFunction(){
+
+	var sid = $('#sid').val()
+	var path = 'http://127.0.0.1:8000/router/api' + '?' + 'sid=' + sid
+    $.ajax({
+			type: "GET",
+            url: path,
+            dataType: 'json',
+            success: function(result) {
+
+            	for (var i = result.length - 1; i >= 0; i--) {
+            		r = result[i]
+            		row = '<tr><td>' + r['sapid'] + '<td><td>' + r['hostname'] + '<td><td>' + r['loopback'] + '<td><td>'  + r['mac'] + '<td><tr>'
+            		$('#resultdiv').append(JSON.stringify(row))
+            	}
+               
+            },
+            error: function(data) {
+                alert('error')
+            },
+        });
+
+}
+</script>
+
+{% endblock %}
+

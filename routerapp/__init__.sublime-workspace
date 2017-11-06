@@ -1,0 +1,327 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"P",
+				"PostDetail"
+			],
+			[
+				"Co",
+				"CommentDetail"
+			],
+			[
+				"Pos",
+				"PostSerializer"
+			],
+			[
+				"U",
+				"UserSerializer"
+			],
+			[
+				"post",
+				"post_user"
+			],
+			[
+				"pOst",
+				"Post"
+			],
+			[
+				"PO",
+				"Post"
+			],
+			[
+				"Tw",
+				"TweetDetail"
+			],
+			[
+				"met",
+				"method"
+			],
+			[
+				"su",
+				"super"
+			],
+			[
+				"User",
+				"userProfile"
+			],
+			[
+				"get",
+				"get_context_data"
+			],
+			[
+				"cont",
+				"context"
+			],
+			[
+				"login",
+				"login_required"
+			],
+			[
+				"lo",
+				"login_required"
+			],
+			[
+				"u",
+				"user"
+			],
+			[
+				"IN",
+				"INSTALLED_APPS"
+			],
+			[
+				"__",
+				"__name__"
+			],
+			[
+				"db",
+				"dblog"
+			],
+			[
+				"c",
+				"context"
+			],
+			[
+				"new",
+				"new_post"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"a",
+				"assertEqual"
+			],
+			[
+				"cl",
+				"client"
+			],
+			[
+				"t",
+				"test"
+			],
+			[
+				"user",
+				"user_email"
+			],
+			[
+				"sho",
+				"show_notification"
+			],
+			[
+				"po",
+				"postapp"
+			],
+			[
+				"sh",
+				"show_notification"
+			],
+			[
+				"se",
+				"self"
+			],
+			[
+				"pos",
+				"post_text"
+			],
+			[
+				"si",
+				"sig_post"
+			],
+			[
+				"sig_",
+				"sig_post"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/shal/virenv/DjProject/TweetApp/commentapp/views.py",
+		"/home/shal/virenv/DjProject/TweetApp/commentapp/urls.py",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/urls.py",
+		"/home/shal/virenv/DjProject/TweetApp/userapp/serializer.py",
+		"/home/shal/virenv/DjProject/TweetApp/commentapp/serializer.py",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/serializer.py",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/views.py",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/signals.py",
+		"/home/shal/virenv/DjProject/TweetApp/userapp/views.py",
+		"/home/shal/virenv/DjProject/TweetApp/userapp/migrations/0001_initial.py",
+		"/home/shal/virenv/DjProject/TweetApp/TweetApp/settings.py",
+		"/home/shal/virenv/DjProject/TweetApp/TweetApp/urls.py",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/templates/postapp/index.html",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/templates/postapp/detail.html",
+		"/home/shal/virenv/DjProject/TweetApp/userapp/urls.py",
+		"/home/shal/virenv/DjProject/TweetApp/userapp/templates/userapp/profile.html",
+		"/home/shal/Desktop/ab.html",
+		"/home/shal/virenv/DjProject/TweetApp/notifapp/models.py",
+		"/home/shal/virenv/DjProject/TweetApp/static/style.css",
+		"/home/shal/virenv/DjProject/TweetApp/templates/base.html",
+		"/home/shal/virenv/DjProject/TweetApp/commentapp/tests.py",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/tests.py",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/receivers.py",
+		"/home/shal/virenv/DjProject/TweetApp/userapp/tests.py",
+		"/home/shal/virenv/DjProject/TweetApp/userapp/templates/userapp/login.html",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/models.py",
+		"/home/shal/virenv/DjProject/TweetApp/postapp/apps.py"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"content",
+			"test_user",
+			"test_use_1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"testuser"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "__init__.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
